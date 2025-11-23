@@ -24,7 +24,7 @@ It will be deployed online so anyone can play.
 ---
 
 ## 🖼️ Mockup
-![Mockup (Simple Sketch) of the Matching Game](Mockups.png)
+![Mockup (Simple Sketch) of the Matching Game](blob:https://imgur.com/a/s078Nwm)
 - Link here: https://excalidraw.com/#json=E16JeY6d5sjO7snouiBAk,NCFJswX2174FHnGsmPdz9g
 ## 🧑‍💻 Pseudo Code (Planning Steps)
 // 1. Setup
