@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Memory Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="vertical-text">Memory Game✨</h1>
+
+  <!-- Container for instructions and stats -->
+  <div class="game-info">
+    <!-- Instructions -->
+    <div id="instructions">
+      <h2>~How to Play~</h2>
+      <p>
+        Flip the cards to find matching pairs.<br>
+        You have 60 seconds to match all pairs.<br>
+        Try to finish with the fewest moves possible!
+      </p>
+    </div>
+
+    <!-- Game Stats -->
+    <div id="timer">Time: 60s</div>
+    <div id="moves">Moves: 0</div>
+  </div>
+
+  <!-- Game Board -->
+  <section class="memory-game">
+    <!-- 12 cards (6 pairs) -->
+    <div class="memory-card" data-framework="C">
+      <img class="front-face" src="img/C.png" alt="C" />
+      <img class="back-face" src="img/QM.png" alt="QM" />
+    </div>
+    <div class="memory-card" data-framework="C">
+      <img class="front-face" src="img/C.png" alt="C" />
+      <img class="back-face" src="img/QM.png" alt="QM" />
+    </div>
+
+    <div class="memory-card" data-framework="JAVASCRIPT">
+      <img class="front-face" src="img/JAVASCRIPT.png" alt="JAVASCRIPT" />
+      <img class="back-face" src="img/QM.png" alt="QM" />
+    </div>
+    <div class="memory-card" data-framework="JAVASCRIPT">
+      <img class="front-face" src="img/JAVASCRIPT.png" alt="JAVASCRIPT" />
+      <img class="back-face" src="img/QM.png" alt="QM" />
+    </div>
+
+    <div class="memory-card" data-framework="PYTHON">
+      <img class="front-face" src="img/PYTHON.png" alt="PYTHON" />
+      <img class="back-face" src="img/QM.png" alt="QM" />
+    </div>
+    <div class="memory-card" data-framework="PYTHON">
+      <img class="front-face" src="img/PYTHON.png" alt="PYTHON" />
+      <img class="back-face" src="img/QM.png" alt="QM" />
+    </div>
+
+    <div class="memory-card" data-framework="RUBY">
+      <img class="front-face" src="img/RUBY.png" alt="RUBY" />
+      <img class="back-face" src="img/QM.png" alt="QM" />
+    </div>
+    <div class="memory-card" data-framework="RUBY">
+      <img class="front-face" src="img/RUBY.png" alt="RUBY" />
+      <img class="back-face" src="img/QM.png" alt="QM" />
+    </div>
+
+    <div class="memory-card" data-framework="PHP">
+      <img class="front-face" src="img/PHP.png" alt="PHP" />
+      <img class="back-face" src="img/QM.png" alt="QM" />
+    </div>
+    <div class="memory-card" data-framework="PHP">
+      <img class="front-face" src="img/PHP.png" alt="PHP" />
+      <img class="back-face" src="img/QM.png" alt="QM" />
+    </div>
+
+    <div class="memory-card" data-framework="JAVA">
+      <img class="front-face" src="img/JAVA.png" alt="JAVA" />
+      <img class="back-face" src="img/QM.png" alt="QM" />
+    </div>
+    <div class="memory-card" data-framework="JAVA">
+      <img class="front-face" src="img/JAVA.png" alt="JAVA" />
+      <img class="back-face" src="img/QM.png" alt="QM" />
+    </div>
+  </section>
+
+
+
+  <!-- Win/Lose Message -->
+  <div id="message" style="display:none"></div>
+
+  <!-- Popup Message -->
+  <div id="popupMessage" class="popup">
+    <div class="popup-content">
+      <h2>Game Completed</h2>
+      <p>You completed the game using <span id="totalGameMoves"></span> moves.</p>
+      <p>Your total time was <span id="totalGameTime"></span>.</p>
+      <p>Your rating: <span id="finalStarRating"></span></p>
+      <p id="gameResult" class="result-text"></p>
+      <button id="restart">Restart</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
